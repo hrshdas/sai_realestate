@@ -54,9 +54,9 @@ export default function Stats() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: i * 0.12 }}
-                                className="flex items-start gap-8 py-9 border-b border-white/6 last:border-0"
+                                className="flex flex-col sm:flex-row items-start gap-2 sm:gap-8 py-7 md:py-9 border-b border-white/6 last:border-0"
                             >
-                                <p className="font-serif text-6xl font-light text-[#C9A227] leading-none shrink-0 w-28">
+                                <p className="font-serif text-4xl md:text-6xl font-light text-[#C9A227] leading-none shrink-0">
                                     {stat.value}
                                 </p>
                                 <div className="pt-2">
