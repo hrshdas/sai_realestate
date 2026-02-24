@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+@theme {
+  --color-gold: #C9A227;
+  --color-gold-light: #E8C547;
+  --color-gold-dark: #A07D1A;
+  --color-charcoal: #0E0E0E;
+  --color-charcoal-light: #161616;
+  --color-muted: #6B7280;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* ─── Base ─────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  background-color: #0E0E0E;
+  color: #E5E5E5;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.01em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E0E0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A227;
+}
+
+/* ─── Typography ────────────────────────────────────────── */
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Luxury display heading: very light tracking, tight leading */
+.luxury-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+}
+
+/* Eyebrow / tagline above headings */
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6875rem;
+  /* 11px */
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #C9A227;
+}
+
+/* ─── Nav underline hover ───────────────────────────────── */
+.gold-underline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #C9A227;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gold-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* ─── Cards ─────────────────────────────────────────────── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(201, 162, 39, 0.25);
+}
+
+/* ─── Luxury Button ─────────────────────────────────────── */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  background-color: #C9A227;
+  color: #0E0E0E;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #A07D1A;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid rgba(201, 162, 39, 0.6);
+  color: #C9A227;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: border-color 0.4s ease, background 0.4s ease, color 0.4s ease;
+}
+
+.btn-outline:hover {
+  background-color: #C9A227;
+  border-color: #C9A227;
+  color: #0E0E0E;
+}
+
+/* ─── Section spacing ───────────────────────────────────── */
+.section-padding {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* ─── Gold divider ──────────────────────────────────────── */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  height: 1px;
+  width: 3rem;
+  background: rgba(201, 162, 39, 0.4);
+}
+
+.gold-divider-dot {
+  width: 4px;
+  height: 4px;
+  background: #C9A227;
+  border-radius: 50%;
+}
+
+/* ─── Text ──────────────────────────────────────────────── */
+.text-gold {
+  color: #C9A227;
+}
+
+.bg-gold {
+  background-color: #C9A227;
+}
+
+.border-gold {
+  border-color: #C9A227;
+}
+
+.text-muted {
+  color: #6B7280;
+  font-size: 0.8125rem;
+  line-height: 1.8;
+}
