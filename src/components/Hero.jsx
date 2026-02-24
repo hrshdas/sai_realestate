@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/55 to-black/85" />
 
             {/* Content */}
-            <div className="relative z-10 px-6 max-w-5xl mx-auto text-center">
+            <div className="relative z-10 px-6 max-w-5xl mx-auto text-center pt-24">
 
                 {/* Eyebrow */}
                 <motion.p
