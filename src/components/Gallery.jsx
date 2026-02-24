@@ -32,17 +32,25 @@ export default function Gallery() {
                             transition={{ duration: 0.6, delay: i * 0.06 }}
                             className="group relative overflow-hidden aspect-square cursor-pointer"
                         >
+                            {/* Image with zoom */}
                             <img
                                 src={img.src}
                                 alt={img.label}
-                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 grayscale-[20%] group-hover:grayscale-0"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 grayscale-[15%] group-hover:grayscale-0"
                             />
-                            {/* Overlay */}
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-500" />
-                            {/* Caption */}
+
+                            {/* Gold gradient overlay */}
+                            <div
+                                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                style={{
+                                    background: 'linear-gradient(to top, rgba(201,162,39,0.55) 0%, rgba(0,0,0,0.45) 50%, transparent 100%)',
+                                }}
+                            />
+
+                            {/* Caption slides up */}
                             <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                                <p className="text-white text-sm font-medium">{img.label}</p>
-                                <p className="text-[#C9A227] text-[10px] tracking-widest uppercase mt-0.5">{img.location}</p>
+                                <p className="text-white text-sm font-semibold drop-shadow">{img.label}</p>
+                                <p className="text-[#f5d97a] text-[10px] tracking-widest uppercase mt-0.5 drop-shadow">{img.location}</p>
                             </div>
                         </motion.div>
                     ))}
@@ -53,7 +61,7 @@ export default function Gallery() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="text-center mt-16"
+                    className="text-center mt-14"
                 >
                     <a href="#contact" className="btn-outline">
                         Discuss Your Project

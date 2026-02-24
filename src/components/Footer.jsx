@@ -29,7 +29,7 @@ export default function Footer() {
                     {/* Col 1 — Brand */}
                     <div>
                         <a href="#" className="flex items-center mb-8">
-                            <img src="/logo-dark.png" alt="SAI Interior & Infrastructure" className="h-16 w-auto object-contain" />
+                            <img src="/logo-light.png" alt="SAI Interior & Infrastructure" className="h-16 w-auto object-contain" />
                         </a>
                         <div className="flex flex-col gap-5 mb-10">
                             <div className="flex items-start gap-3">
