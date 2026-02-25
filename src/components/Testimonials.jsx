@@ -20,14 +20,14 @@ const testimonials = [
     {
         name: 'Amit Bansal',
         role: 'Investor · Gurgaon',
-        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop&crop=face&faces=1&facepad=2',
+        image: '/images/amit-bansal.png',
         rating: 5,
         text: 'As a seasoned investor, I needed clear ROI guidance on Gurgaon properties. Their market insight was accurate and the returns have been exactly as projected.',
     },
     {
         name: 'Neha Arora',
         role: 'Homeowner · Noida',
-        image: 'https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?q=80&w=400&auto=format&fit=crop&crop=face',
+        image: '/images/neha-arora.jpg',
         rating: 5,
         text: 'The transparency and honesty throughout the process is what impressed me most. No hidden charges, no pressure — highly recommended for any Delhi NCR buyer.',
     },

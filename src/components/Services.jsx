@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Home, Building2, Wrench, Palette } from 'lucide-react'
+import { Home, Building2, Palette } from 'lucide-react'
 
 const services = [
     {
@@ -11,11 +11,6 @@ const services = [
         icon: Building2,
         title: 'Commercial Projects',
         description: 'Inspiring commercial environments that speak authority and drive business forward.',
-    },
-    {
-        icon: Wrench,
-        title: 'Renovation & Restoration',
-        description: 'Breathing new life into existing spaces — preserving character while adding modern refinement.',
     },
     {
         icon: Palette,
@@ -55,7 +50,7 @@ export default function Services() {
                     subtitle="From residential dream homes to landmark commercial spaces — precision and elegance define every project."
                 />
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-px bg-white/5">
                     {services.map((service, i) => {
                         const Icon = service.icon
                         return (

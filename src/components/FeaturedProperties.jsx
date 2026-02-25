@@ -7,42 +7,36 @@ const properties = [
         image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=800&auto=format&fit=crop',
         location: 'South Delhi',
         type: 'Luxury Apartment',
-        price: '₹3.2 Cr',
         beds: 4, baths: 3, sqft: '2,800',
     },
     {
         image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop',
         location: 'Dwarka Sector 6',
         type: 'Gated Society Flat',
-        price: '₹1.45 Cr',
         beds: 3, baths: 2, sqft: '1,650',
     },
     {
         image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',
         location: 'Gurgaon Golf Course Road',
         type: 'Premium Villa',
-        price: '₹4.8 Cr',
         beds: 5, baths: 4, sqft: '4,200',
     },
     {
         image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop',
         location: 'Noida Sector 150',
         type: 'High-Rise Apartment',
-        price: '₹1.2 Cr',
         beds: 3, baths: 2, sqft: '1,450',
     },
     {
         image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop',
         location: 'West Delhi',
         type: 'Builder Floor',
-        price: '₹95 Lakhs',
         beds: 3, baths: 2, sqft: '1,200',
     },
     {
         image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop',
         location: 'Vasant Kunj',
         type: 'Luxury Apartment',
-        price: '₹2.1 Cr',
         beds: 3, baths: 3, sqft: '2,100',
     },
 ]
@@ -74,10 +68,7 @@ export default function FeaturedProperties() {
                                     alt={p.location}
                                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 grayscale-[15%] group-hover:grayscale-0"
                                 />
-                                {/* Price badge */}
-                                <div className="absolute top-4 right-4 bg-[#C9A227] px-4 py-1.5">
-                                    <span className="text-black text-sm font-bold tracking-wide">{p.price}</span>
-                                </div>
+
                                 {/* Gold overlay on hover */}
                                 <div
                                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
