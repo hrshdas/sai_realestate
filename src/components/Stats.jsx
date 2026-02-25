@@ -73,7 +73,7 @@ export default function Stats() {
                                 With <span className="text-white/70">years of experience</span> in the premium construction sector, we specialise in developing luxury builder floors, high-rise residential apartments, gated housing projects, and commercial developments.
                             </p>
                             <p>
-                                We have successfully delivered and executed <span className="text-white/70">10+ premium residential and commercial units</span>, working closely with homeowners, NRIs, and investors to create structurally sound, high-quality properties backed by complete legal compliance and documentation.
+                                We have successfully delivered and executed <span className="text-white/70">premium residential and commercial units</span>, working closely with homeowners, NRIs, and investors to create structurally sound, high-quality properties backed by complete legal compliance and documentation.
                             </p>
                             <p>
                                 Our mission is to build with integrity, precision, and transparency, ensuring every project meets the highest standards of design, safety, and long-term value while offering a seamless and secure ownership experience.
@@ -118,7 +118,7 @@ export default function Stats() {
 
                             {/* Bio */}
                             <p className="text-white/55 text-sm leading-relaxed mb-4">
-                                At just <span className="text-white font-medium">24</span>, Manan is shaping a new standard for urban living in Delhi NCR. With a deep understanding of design, construction, and evolving lifestyles, he has already delivered homes for <span className="text-white font-medium">12+ families</span>, spaces built not just to be owned, but to be lived in.
+                                At just <span className="text-white font-medium">24</span>, Manan is shaping a new standard for urban living in Delhi NCR. With a deep understanding of design, construction, and evolving lifestyles, he builds spaces meant not just to be owned, but to be lived in.
                             </p>
                             <p className="text-white/55 text-sm leading-relaxed mb-4">
                                 Driven by precision and purpose, Manan approaches every project with a builder's discipline and a developer's vision. From concept to completion, his focus remains unwavering: creating thoughtfully planned homes that balance quality, functionality, and long-term value.
