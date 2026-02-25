@@ -1,11 +1,11 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import { SectionHeader } from './Services'
 
 // ── Animated counter ──────────────────────────────────────
 function Counter({ to, suffix = '' }) {
     const ref = useRef(null)
-    const inView = useInView(ref, { once: true, margin: '-60px' })
+    const inView = useInView(ref, { once: true, margin: '-40px' })
     const raw = useMotionValue(0)
     const spring = useSpring(raw, { stiffness: 60, damping: 18 })
     const display = useTransform(spring, (v) => {
@@ -13,7 +13,9 @@ function Counter({ to, suffix = '' }) {
         return Math.round(v) + suffix
     })
 
-    if (inView) raw.set(parseFloat(to))
+    useEffect(() => {
+        if (inView) raw.set(parseFloat(to))
+    }, [inView, to, raw])
 
     return (
         <span ref={ref}>
