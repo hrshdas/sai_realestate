@@ -57,16 +57,15 @@ export default function Stats() {
                         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                         className="relative"
                     >
-                        <img
-                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
-                            alt="Luxury Interior"
-                            className="w-full h-[480px] object-cover"
-                        />
-                        <div className="absolute inset-0 border border-[#C9A227]/20 translate-x-5 translate-y-5 -z-10 hidden lg:block" />
-                        <div className="absolute -bottom-7 -right-7 bg-[#C9A227] px-7 py-5 hidden lg:block">
-                            <p className="font-serif text-4xl font-bold text-black leading-none">12+</p>
-                            <p className="text-black/60 text-[10px] font-medium tracking-widest uppercase mt-1">Happy Families</p>
+                        <div className="relative w-full h-[480px] bg-[#0a0a0a] flex items-center justify-center">
+                            <img
+                                src="/logo-light.png"
+                                alt="SAI Interior & Infrastructure"
+                                className="w-4/5 max-w-md object-contain select-none"
+                            />
                         </div>
+                        <div className="absolute inset-0 border border-[#C9A227]/20 translate-x-5 translate-y-5 -z-10 hidden lg:block" />
+
 
                         {/* Premium text block */}
                         <div className="mt-10 space-y-4 text-white/40 text-sm leading-loose font-light lg:pr-6">
@@ -90,24 +89,7 @@ export default function Stats() {
                         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                         className="flex flex-col"
                     >
-                        {stats.map((stat, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: i * 0.12 }}
-                                className="flex flex-col sm:flex-row items-start gap-2 sm:gap-8 py-7 md:py-9 border-b border-white/6 last:border-0"
-                            >
-                                <p className="font-serif text-4xl md:text-6xl font-light text-[#C9A227] leading-none shrink-0 tabular-nums">
-                                    <Counter to={stat.value} suffix={stat.suffix} />
-                                </p>
-                                <div className="pt-2">
-                                    <p className="text-white text-base font-medium mb-1.5 tracking-wide">{stat.label}</p>
-                                    <p className="text-muted text-sm leading-relaxed">{stat.detail}</p>
-                                </div>
-                            </motion.div>
-                        ))}
+
 
                         <motion.div
                             initial={{ opacity: 0, y: 24 }}

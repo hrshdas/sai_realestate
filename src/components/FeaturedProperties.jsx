@@ -9,11 +9,6 @@ const properties = [
         beds: 4, baths: 3, sqft: '2,800',
     },
     {
-        image: '/images/property-dwarka.jpg',
-        type: 'Gated Society Flat',
-        beds: 3, baths: 2, sqft: '1,650',
-    },
-    {
         image: '/images/property-gurgaon.jpg',
         type: 'Builder Floor',
         beds: 4, baths: 3, sqft: '2,600',
@@ -22,11 +17,6 @@ const properties = [
         image: '/images/property-noida.jpg',
         type: 'High-Rise Apartment',
         beds: 3, baths: 2, sqft: '1,450',
-    },
-    {
-        image: '/images/property-west-delhi.jpg',
-        type: 'Builder Floor',
-        beds: 3, baths: 2, sqft: '1,200',
     },
     {
         image: '/images/property-vasant-kunj.jpg',
@@ -45,7 +35,7 @@ export default function FeaturedProperties() {
                     subtitle="Handpicked luxury properties across Delhi NCR — verified listings, transparent pricing, complete legal support."
                 />
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
                     {properties.map((p, i) => (
                         <motion.div
                             key={i}
