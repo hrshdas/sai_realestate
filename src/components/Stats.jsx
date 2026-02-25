@@ -119,7 +119,7 @@ export default function Stats() {
                             {/* Top row — photo + name */}
                             <div className="flex items-center gap-6 mb-6">
                                 <img
-                                    src="/images/manan-joshi.png"
+                                    src="/images/manan-joshi.jpg"
                                     alt="Manan Joshi"
                                     className="w-24 h-24 object-cover object-top shrink-0"
                                     style={{ filter: 'saturate(0.9)' }}

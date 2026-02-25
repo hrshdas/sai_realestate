@@ -4,7 +4,7 @@ import { SectionHeader } from './Services'
 
 const properties = [
     {
-        image: '/images/property-south-delhi.png',
+        image: '/images/property-south-delhi.jpg',
         type: 'Luxury Apartment',
         beds: 4, baths: 3, sqft: '2,800',
     },
@@ -14,7 +14,7 @@ const properties = [
         beds: 3, baths: 2, sqft: '1,650',
     },
     {
-        image: '/images/property-gurgaon.png',
+        image: '/images/property-gurgaon.jpg',
         type: 'Builder Floor',
         beds: 4, baths: 3, sqft: '2,600',
     },
@@ -24,12 +24,12 @@ const properties = [
         beds: 3, baths: 2, sqft: '1,450',
     },
     {
-        image: '/images/property-west-delhi.png',
+        image: '/images/property-west-delhi.jpg',
         type: 'Builder Floor',
         beds: 3, baths: 2, sqft: '1,200',
     },
     {
-        image: '/images/property-vasant-kunj.png',
+        image: '/images/property-vasant-kunj.jpg',
         type: 'Luxury Apartment',
         beds: 3, baths: 3, sqft: '2,100',
     },

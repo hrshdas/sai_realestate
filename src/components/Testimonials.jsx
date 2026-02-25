@@ -20,7 +20,7 @@ const testimonials = [
     {
         name: 'Amit Bansal',
         role: 'Investor · Gurgaon',
-        image: '/images/amit-bansal.png',
+        image: '/images/amit-bansal.jpg',
         rating: 5,
         text: 'As a seasoned investor, I needed clear ROI guidance on Gurgaon properties. Their market insight was accurate and the returns have been exactly as projected.',
     },
