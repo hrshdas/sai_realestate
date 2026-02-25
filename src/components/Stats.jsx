@@ -71,18 +71,13 @@ export default function Stats() {
                         {/* Premium text block */}
                         <div className="mt-10 space-y-4 text-white/40 text-sm leading-loose font-light lg:pr-6">
                             <p>
-                                With over <span className="text-white/70">12+ years of experience</span> in Delhi NCR's
-                                premium real estate market, we specialise in luxury builder floors, high-rise apartments,
-                                gated societies, and commercial investments across South Delhi, Dwarka, Gurgaon, and Noida.
+                                With <span className="text-white/70">years of experience</span> in the premium construction sector, we specialise in developing luxury builder floors, high-rise residential apartments, gated housing projects, and commercial developments.
                             </p>
                             <p>
-                                We have successfully closed <span className="text-white/70">500+ premium transactions</span> and
-                                assisted NRIs and investors in securing safe, high-return properties with complete legal
-                                and documentation support.
+                                We have successfully delivered and executed <span className="text-white/70">10+ premium residential and commercial units</span>, working closely with homeowners, NRIs, and investors to create structurally sound, high-quality properties backed by complete legal compliance and documentation.
                             </p>
                             <p>
-                                Our mission is to provide transparent deals, verified listings, and end-to-end legal assistance —
-                                ensuring every client enjoys a smooth and secure property buying experience.
+                                Our mission is to build with integrity, precision, and transparency, ensuring every project meets the highest standards of design, safety, and long-term value while offering a seamless and secure ownership experience.
                             </p>
                         </div>
                     </motion.div>
@@ -141,15 +136,18 @@ export default function Stats() {
 
                             {/* Bio */}
                             <p className="text-white/55 text-sm leading-relaxed mb-4">
-                                At just <span className="text-white font-medium">24</span>, Manan has already redefined what it means to be a real estate advisor in Delhi NCR. Armed with sharp market instincts and an obsessive focus on client success, he has personally guided <span className="text-white font-medium">12+ families</span> toward properties that don't just match budgets — they match dreams.
+                                At just <span className="text-white font-medium">24</span>, Manan is shaping a new standard for urban living in Delhi NCR. With a deep understanding of design, construction, and evolving lifestyles, he has already delivered homes for <span className="text-white font-medium">12+ families</span>, spaces built not just to be owned, but to be lived in.
+                            </p>
+                            <p className="text-white/55 text-sm leading-relaxed mb-4">
+                                Driven by precision and purpose, Manan approaches every project with a builder's discipline and a developer's vision. From concept to completion, his focus remains unwavering: creating thoughtfully planned homes that balance quality, functionality, and long-term value.
                             </p>
                             <p className="text-white/55 text-sm leading-relaxed mb-6">
-                                His energy is infectious, his knowledge is razor-sharp, and his commitment? Absolute. Manan doesn't clock out until his clients are home.
+                                His work reflects energy, clarity, and uncompromising commitment. Every structure he builds is a promise of durability, trust, and a better way of living.
                             </p>
 
                             {/* Tags */}
                             <div className="flex flex-wrap gap-2 mb-6">
-                                {['Builder Floors', 'Investment Advisory', 'NRI Services', 'Legal Assistance', 'South Delhi'].map((tag) => (
+                                {['Builder Floors', 'Residential Development', 'Custom-Built Homes', 'Legal & Project Compliance', 'South Delhi'].map((tag) => (
                                     <span key={tag} className="text-[10px] text-[#C9A227] border border-[#C9A227]/30 px-3 py-1 tracking-widest uppercase">
                                         {tag}
                                     </span>
@@ -159,7 +157,7 @@ export default function Stats() {
                             {/* Quote */}
                             <div className="border-l-2 border-[#C9A227] pl-4">
                                 <p className="text-white/70 text-sm italic leading-relaxed font-light">
-                                    "Real estate isn't just about square feet — it's about the life you'll build inside those walls. I'm here to make sure you get both right."
+                                    "Building isn't about concrete and walls, it's about creating spaces where lives take shape. I build with that responsibility in mind."
                                 </p>
                                 <p className="text-[#C9A227] text-[10px] tracking-widest uppercase mt-2">— Manan Joshi</p>
                             </div>

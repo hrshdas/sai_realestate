@@ -13,7 +13,7 @@ const testimonials = [
     {
         name: 'Priya Khanna',
         role: 'Homeowner · Dwarka',
-        image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400&auto=format&fit=crop&crop=face',
+        image: '/images/priya-khanna.jpg',
         rating: 5,
         text: 'I was looking for a safe family apartment in Dwarka. The team showed only verified properties, handled all paperwork, and the entire process felt completely stress-free.',
     },
@@ -69,7 +69,7 @@ export default function Testimonials() {
                                 <img
                                     src={t.image}
                                     alt={t.name}
-                                    className="w-10 h-10 rounded-full object-cover grayscale opacity-75"
+                                    className={`w-10 h-10 rounded-full object-cover ${t.name === 'Amit Bansal' || t.name === 'Neha Arora' || t.name === 'Priya Khanna' ? '' : 'grayscale opacity-75'}`}
                                 />
                                 <div>
                                     <p className="text-white text-sm font-medium">{t.name}</p>

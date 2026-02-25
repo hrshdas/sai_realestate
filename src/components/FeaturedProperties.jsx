@@ -1,41 +1,35 @@
 import { motion } from 'framer-motion'
-import { MapPin, BedDouble, Bath, Maximize2 } from 'lucide-react'
+import { BedDouble, Bath, Maximize2 } from 'lucide-react'
 import { SectionHeader } from './Services'
 
 const properties = [
     {
         image: '/images/property-south-delhi.png',
-        location: 'South Delhi',
         type: 'Luxury Apartment',
         beds: 4, baths: 3, sqft: '2,800',
     },
     {
         image: '/images/property-dwarka.jpg',
-        location: 'Dwarka Sector 6',
         type: 'Gated Society Flat',
         beds: 3, baths: 2, sqft: '1,650',
     },
     {
         image: '/images/property-gurgaon.png',
-        location: 'Gurgaon Sector 47',
         type: 'Builder Floor',
         beds: 4, baths: 3, sqft: '2,600',
     },
     {
         image: '/images/property-noida.jpg',
-        location: 'Noida Sector 150',
         type: 'High-Rise Apartment',
         beds: 3, baths: 2, sqft: '1,450',
     },
     {
         image: '/images/property-west-delhi.png',
-        location: 'West Delhi',
         type: 'Builder Floor',
         beds: 3, baths: 2, sqft: '1,200',
     },
     {
         image: '/images/property-vasant-kunj.png',
-        location: 'Vasant Kunj',
         type: 'Luxury Apartment',
         beds: 3, baths: 3, sqft: '2,100',
     },
@@ -78,14 +72,8 @@ export default function FeaturedProperties() {
 
                             {/* Card body */}
                             <div className="p-7 flex flex-col flex-1">
-                                <div className="flex items-start justify-between mb-3">
-                                    <div>
-                                        <p className="eyebrow text-[#C9A227]/70 mb-1">{p.type}</p>
-                                        <h3 className="font-serif text-xl text-white group-hover:text-[#C9A227] transition-colors duration-400">
-                                            {p.location}
-                                        </h3>
-                                    </div>
-                                    <MapPin className="w-4 h-4 text-[#C9A227]/40 mt-1 shrink-0" strokeWidth={1.5} />
+                                <div className="mb-3">
+                                    <p className="eyebrow text-[#C9A227]/70">{p.type}</p>
                                 </div>
 
                                 <div className="flex items-center gap-6 mt-auto pt-5 border-t border-white/6">

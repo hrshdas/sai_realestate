@@ -71,11 +71,7 @@ export default function Services() {
                                     </h3>
                                     <p className="text-muted leading-relaxed text-sm">{service.description}</p>
                                 </div>
-                                <div className="mt-auto pt-6 border-t border-white/5">
-                                    <span className="text-[#C9A227] text-xs tracking-widest font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 uppercase">
-                                        Learn more →
-                                    </span>
-                                </div>
+                                <div className="mt-auto pt-6 border-t border-white/5" />
                             </motion.div>
                         )
                     })}
