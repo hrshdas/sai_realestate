@@ -4,37 +4,37 @@ import { SectionHeader } from './Services'
 
 const properties = [
     {
-        image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=800&auto=format&fit=crop',
+        image: '/images/property-south-delhi.png',
         location: 'South Delhi',
         type: 'Luxury Apartment',
         beds: 4, baths: 3, sqft: '2,800',
     },
     {
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop',
+        image: '/images/property-dwarka.jpg',
         location: 'Dwarka Sector 6',
         type: 'Gated Society Flat',
         beds: 3, baths: 2, sqft: '1,650',
     },
     {
-        image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',
-        location: 'Gurgaon Golf Course Road',
-        type: 'Premium Villa',
-        beds: 5, baths: 4, sqft: '4,200',
+        image: '/images/property-gurgaon.png',
+        location: 'Gurgaon Sector 47',
+        type: 'Builder Floor',
+        beds: 4, baths: 3, sqft: '2,600',
     },
     {
-        image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop',
+        image: '/images/property-noida.jpg',
         location: 'Noida Sector 150',
         type: 'High-Rise Apartment',
         beds: 3, baths: 2, sqft: '1,450',
     },
     {
-        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop',
+        image: '/images/property-west-delhi.png',
         location: 'West Delhi',
         type: 'Builder Floor',
         beds: 3, baths: 2, sqft: '1,200',
     },
     {
-        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop',
+        image: '/images/property-vasant-kunj.png',
         location: 'Vasant Kunj',
         type: 'Luxury Apartment',
         beds: 3, baths: 3, sqft: '2,100',
