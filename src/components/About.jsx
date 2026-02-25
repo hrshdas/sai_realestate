@@ -3,8 +3,8 @@ import { Award, Users, Home, TrendingUp } from 'lucide-react'
 
 const stats = [
     { value: '12+', label: 'Years Experience' },
-    { value: '500+', label: 'Properties Sold' },
-    { value: '1200+', label: 'Happy Clients' },
+    { value: '12+', label: 'Properties Built' },
+    { value: '12+', label: 'Happy Clients' },
     { value: '98%', label: 'Client Satisfaction' },
 ]
 
@@ -26,7 +26,7 @@ export default function About() {
                     />
                     <div className="absolute -bottom-8 -right-8 w-64 bg-[#C9A227] p-6 hidden lg:block">
                         <p className="font-serif text-4xl font-bold text-black">12+</p>
-                        <p className="text-black/70 text-sm font-medium mt-1">Years of Excellence in Premium Real Estate</p>
+                        <p className="text-black/70 text-sm font-medium mt-1">Happy Families Served Across Delhi NCR</p>
                     </div>
                     <div className="absolute inset-0 border border-[#C9A227]/20 translate-x-4 translate-y-4 -z-10 hidden lg:block" />
                 </motion.div>

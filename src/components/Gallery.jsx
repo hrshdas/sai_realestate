@@ -2,14 +2,24 @@ import { motion } from 'framer-motion'
 import { SectionHeader } from './Services'
 
 const galleryImages = [
-    { src: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=800&auto=format&fit=crop', label: 'Skyline Penthouse', location: 'Mumbai' },
-    { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop', label: 'Grand Villa Estate', location: 'Gurgaon' },
-    { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop', label: 'Modern Heights', location: 'Pune' },
-    { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop', label: 'Coastal Bungalow', location: 'Goa' },
-    { src: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop', label: 'Premium Interior', location: 'New Delhi' },
-    { src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop', label: 'Commercial Tower', location: 'Bangalore' },
-    { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop', label: 'Hillside Retreat', location: 'Lonavala' },
-    { src: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=800&auto=format&fit=crop', label: 'Urban Suite', location: 'Hyderabad' },
+    { src: '/images/construction-site.jpg', label: 'Under Construction', location: 'New Delhi' },
+    { src: '/images/construction-site-2.png', label: 'Site Progress', location: 'New Delhi' },
+    { src: '/images/construction-site-3.png', label: 'Building Structure', location: 'New Delhi' },
+
+    { src: '/images/rebar-construction.jpg', label: 'Structural Framework', location: 'New Delhi' },
+    { src: '/images/interior-living.png', label: 'Luxury Interior', location: 'New Delhi' },
+    { src: '/images/interior-lounge.png', label: 'Premium Lounge', location: 'New Delhi' },
+    { src: '/images/interior-dining.jpg', label: 'Elegant Dining', location: 'New Delhi' },
+    { src: '/images/interior-sitting.png', label: 'Designer Sitting Room', location: 'New Delhi' },
+    { src: '/images/interior-corridor.png', label: 'Grand Corridor', location: 'New Delhi' },
+    { src: '/images/interior-lounge2.jpg', label: 'Luxury Club Lounge', location: 'New Delhi' },
+    { src: '/images/interior-marble.jpg', label: 'Marble Entertainment Wall', location: 'New Delhi' },
+    { src: '/images/interior-marble2.png', label: 'Modern TV Unit', location: 'New Delhi' },
+    { src: '/images/interior-bedroom.png', label: 'Signature Bedroom', location: 'New Delhi' },
+    { src: '/images/interior-bedroom2.png', label: 'Botanical Bedroom Suite', location: 'New Delhi' },
+    { src: '/images/interior-bar.jpg', label: 'Crimson Bar & Lounge', location: 'New Delhi' },
+    { src: '/images/interior-entrance.jpg', label: 'Royal Entrance', location: 'New Delhi' },
+
 ]
 
 export default function Gallery() {

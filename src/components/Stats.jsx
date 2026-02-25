@@ -24,19 +24,13 @@ function Counter({ to, suffix = '' }) {
 
 const stats = [
     {
-        value: 500,
+        value: 10,
         suffix: '+',
-        label: 'Properties Sold',
-        detail: 'Premium transactions closed across South Delhi, Dwarka, Gurgaon, Noida and the broader Delhi NCR belt.',
+        label: 'Properties Built',
+        detail: 'Premium properties built and delivered across South Delhi, Dwarka, Gurgaon, Noida and the broader Delhi NCR belt.',
     },
     {
         value: 12,
-        suffix: '+',
-        label: 'Years in Delhi NCR',
-        detail: 'Deep local expertise built over a decade in Delhi NCR\'s premium real estate market.',
-    },
-    {
-        value: 300,
         suffix: '+',
         label: 'Happy Families',
         detail: 'Homeowners and NRI investors who secured safe, high-return properties with our full support.',
@@ -69,7 +63,7 @@ export default function Stats() {
                         <div className="absolute inset-0 border border-[#C9A227]/20 translate-x-5 translate-y-5 -z-10 hidden lg:block" />
                         <div className="absolute -bottom-7 -right-7 bg-[#C9A227] px-7 py-5 hidden lg:block">
                             <p className="font-serif text-4xl font-bold text-black leading-none">12+</p>
-                            <p className="text-black/60 text-[10px] font-medium tracking-widest uppercase mt-1">Years of Excellence</p>
+                            <p className="text-black/60 text-[10px] font-medium tracking-widest uppercase mt-1">Happy Families</p>
                         </div>
 
                         {/* Premium text block */}
@@ -117,6 +111,57 @@ export default function Stats() {
                                 </div>
                             </motion.div>
                         ))}
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.7, delay: 0.3 }}
+                            className="mt-10 border border-[#C9A227]/20 bg-white/3 p-8"
+                        >
+                            {/* Top row — photo + name */}
+                            <div className="flex items-center gap-6 mb-6">
+                                <img
+                                    src="/images/manan-joshi.png"
+                                    alt="Manan Joshi"
+                                    className="w-24 h-24 object-cover object-top shrink-0"
+                                    style={{ filter: 'saturate(0.9)' }}
+                                />
+                                <div>
+                                    <p className="text-[#C9A227] text-[10px] font-semibold tracking-[0.3em] uppercase mb-1">Founder &amp; Managing Director</p>
+                                    <h4 className="font-serif text-2xl font-bold text-white leading-tight">Manan Joshi</h4>
+                                    <p className="text-white/40 text-xs mt-1 tracking-wide">Delhi NCR Real Estate Expert</p>
+                                </div>
+                            </div>
+
+                            {/* Divider */}
+                            <div className="h-px w-full bg-white/6 mb-6" />
+
+                            {/* Bio */}
+                            <p className="text-white/55 text-sm leading-relaxed mb-4">
+                                At just <span className="text-white font-medium">24</span>, Manan has already redefined what it means to be a real estate advisor in Delhi NCR. Armed with sharp market instincts and an obsessive focus on client success, he has personally guided <span className="text-white font-medium">12+ families</span> toward properties that don't just match budgets — they match dreams.
+                            </p>
+                            <p className="text-white/55 text-sm leading-relaxed mb-6">
+                                His energy is infectious, his knowledge is razor-sharp, and his commitment? Absolute. Manan doesn't clock out until his clients are home.
+                            </p>
+
+                            {/* Tags */}
+                            <div className="flex flex-wrap gap-2 mb-6">
+                                {['Builder Floors', 'Investment Advisory', 'NRI Services', 'Legal Assistance', 'South Delhi'].map((tag) => (
+                                    <span key={tag} className="text-[10px] text-[#C9A227] border border-[#C9A227]/30 px-3 py-1 tracking-widest uppercase">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+
+                            {/* Quote */}
+                            <div className="border-l-2 border-[#C9A227] pl-4">
+                                <p className="text-white/70 text-sm italic leading-relaxed font-light">
+                                    "Real estate isn't just about square feet — it's about the life you'll build inside those walls. I'm here to make sure you get both right."
+                                </p>
+                                <p className="text-[#C9A227] text-[10px] tracking-widest uppercase mt-2">— Manan Joshi</p>
+                            </div>
+                        </motion.div>
 
                         <motion.div
                             initial={{ opacity: 0 }}

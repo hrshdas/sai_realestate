@@ -21,14 +21,14 @@ const contactDetails = [
         icon: MapPin,
         label: 'Head Office',
         value: '37/15, Old Rajinder Nagar\nNew Delhi – 110060',
-        href: 'https://maps.google.com/?q=37/15+Old+Rajinder+Nagar+New+Delhi+110060',
+        href: 'https://www.google.com/maps/place//@28.64049,77.1762551,17z/data=!4m5!1m2!2m1!1zaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9MzcvMTUrT2xkK1JhamluZGVyK05hZ2FyK05ldytEZWxoaSsxMTAwNjA!3m1!15sCkRodHRwczovL21hcHMuZ29vZ2xlLmNvbS8_cT0zNy8xNStPbGQrUmFqaW5kZXIrTmFnYXIrTmV3K0RlbGhpKzExMDA2MCIDiAEBkgEQY29tcG91bmRfc2VjdGlvbuABAA?entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D',
         detail: 'By appointment only',
     },
     {
         icon: MapPin,
         label: 'Branch Office',
         value: '4C/10 Bada Bazaar Marg\nOld Rajinder Nagar, New Delhi – 110060',
-        href: 'https://maps.google.com/?q=4C/10+Bada+Bazaar+Marg+Old+Rajinder+Nagar+New+Delhi+110060',
+        href: 'https://www.google.com/maps/place//@28.64049,77.1762551,17z/data=!4m5!1m2!2m1!1zaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20vP3E9MzcvMTUrT2xkK1JhamluZGVyK05hZ2FyK05ldytEZWxoaSsxMTAwNjA!3m1!15sCkRodHRwczovL21hcHMuZ29vZ2xlLmNvbS8_cT0zNy8xNStPbGQrUmFqaW5kZXIrTmFnYXIrTmV3K0RlbGhpKzExMDA2MCIDiAEBkgEQY29tcG91bmRfc2VjdGlvbuABAA?entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D',
         detail: 'By appointment only',
     },
 ]
@@ -85,7 +85,7 @@ export default function ContactInfo() {
                     >
                         <iframe
                             title="Office Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.861018013899!2d72.82609377499517!3d19.059641582134944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8a5e0a0ffff%3A0x5a15e1c5b3c0ad2b!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            src="https://maps.google.com/maps?q=37/15+Old+Rajinder+Nagar+New+Delhi+110060&t=&z=17&ie=UTF8&iwloc=&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border: 0, filter: 'invert(92%) hue-rotate(180deg) saturate(0.3)' }}
