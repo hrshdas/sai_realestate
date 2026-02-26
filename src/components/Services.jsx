@@ -47,7 +47,7 @@ export default function Services() {
                 <SectionHeader
                     tagline="What We Build"
                     title={<>What We <em className="text-[#C9A227] not-italic">Offer</em></>}
-                    subtitle="From residential dream homes to landmark commercial spaces — precision and elegance define every project."
+                    subtitle="From residential dream homes to landmark commercial spaces, precision and elegance define every project."
                 />
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-px bg-white/5">

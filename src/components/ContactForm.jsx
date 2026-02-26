@@ -5,26 +5,56 @@ import { ArrowRight } from 'lucide-react'
 const inquiryTypes = [
     'Residential Construction',
     'Commercial Projects',
-    'Renovation & Restoration',
     'Interior Design',
     'Consultation',
     'Other',
 ]
 
+const FORMSPREE_URL = 'https://formspree.io/f/mwvnybwp'
+
 export default function ContactForm() {
     const [form, setForm] = useState({
         firstName: '', lastName: '', email: '', phone: '', inquiry: '', message: '', agree: false,
     })
+    const [loading, setLoading] = useState(false)
+    const [success, setSuccess] = useState(false)
+    const [error, setError] = useState('')
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target
         setForm({ ...form, [name]: type === 'checkbox' ? checked : value })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        alert('Thank you. Our team will reach out shortly.')
-        setForm({ firstName: '', lastName: '', email: '', phone: '', inquiry: '', message: '', agree: false })
+        setLoading(true)
+        setError('')
+        setSuccess(false)
+        try {
+            const res = await fetch(FORMSPREE_URL, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    firstName: form.firstName,
+                    lastName: form.lastName,
+                    email: form.email,
+                    phone: form.phone,
+                    inquiryType: form.inquiry,
+                    message: form.message,
+                }),
+            })
+            if (res.ok) {
+                setSuccess(true)
+                setForm({ firstName: '', lastName: '', email: '', phone: '', inquiry: '', message: '', agree: false })
+            } else {
+                const data = await res.json()
+                setError(data?.errors?.[0]?.message || 'Submission failed. Please try again.')
+            }
+        } catch (err) {
+            setError('Something went wrong. Please try again or contact us directly.')
+        } finally {
+            setLoading(false)
+        }
     }
 
     const fieldCls = [
@@ -133,13 +163,23 @@ export default function ContactForm() {
                                 </span>
                             </label>
 
+                            {success && (
+                                <p className="text-[#C9A227] text-sm font-light tracking-wide">
+                                    ✓ Thank you. Our team will reach out within 24 hours.
+                                </p>
+                            )}
+                            {error && (
+                                <p className="text-red-400 text-sm font-light tracking-wide">{error}</p>
+                            )}
+
                             <motion.button
                                 whileHover={{ gap: '1.25rem' }}
                                 type="submit"
-                                className="btn-gold w-fit flex items-center gap-4 mt-2"
+                                disabled={loading}
+                                className="btn-gold w-fit flex items-center gap-4 mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                Send Message
-                                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />
+                                {loading ? 'Sending…' : 'Send Message'}
+                                {!loading && <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />}
                             </motion.button>
                         </form>
                     </motion.div>

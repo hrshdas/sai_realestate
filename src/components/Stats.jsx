@@ -109,7 +109,7 @@ export default function Stats() {
                                 <div>
                                     <p className="text-[#C9A227] text-[10px] font-semibold tracking-[0.3em] uppercase mb-1">Founder &amp; Managing Director</p>
                                     <h4 className="font-serif text-2xl font-bold text-white leading-tight">Manan Joshi</h4>
-                                    <p className="text-white/40 text-xs mt-1 tracking-wide">Real Estate Entrepreneur</p>
+                                    <p className="text-white/40 text-xs mt-1 tracking-wide">Constructor &amp; Builder</p>
                                 </div>
                             </div>
 
